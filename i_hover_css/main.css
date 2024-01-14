@@ -1,0 +1,270 @@
+/*HOVER 1*/
+
+@font-face {
+	font-family: 'gotham_bookregular';
+    src: url('../fonts/gotham/gotham-book-webfont.eot');
+    src: url('../fonts/gotham/gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham/gotham-book-webfont.woff2') format('woff2'),
+         url('../fonts/gotham/gotham-book-webfont.woff') format('woff'),
+         url('../fonts/gotham/gotham-book-webfont.ttf') format('truetype'),
+         url('../fonts/gotham/gotham-book-webfont.svg#gotham_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ih-item {
+	position: relative;
+	-webkit-transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+}
+
+.ih-item,
+.ih-item * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ih-item a {
+	color: #333;
+}
+
+.ih-item a:hover {
+	text-decoration: none;
+}
+
+.ih-item img {
+	width: 100%;
+	height: auto;
+}
+
+.ih-item.circle {
+	position: relative;
+	/*  width: 220px;
+	height: 220px;*/
+	border-radius: 0;
+}
+
+.ih-item.circle .img {
+	position: relative;
+	/*width: 220px;
+	height: 220px;*/
+	border-radius: 0;
+}
+
+.ih-item.circle .img:before {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 100%;
+	height: 100%;
+	border-radius: 0;
+	-webkit-transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle .img img {
+	border-radius: 0;
+}
+
+.ih-item.circle .info {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	border-radius: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.ih-item.square {
+	position: relative;
+	/* width: 316px;
+	height: 216px;*/
+	border: 0px;
+}
+
+.ih-item.square .info {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.ih-item.circle.effect17 .info {
+	opacity: 0;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect17 .info h1 {
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: 0px;
+	margin: 0 0px;
+	padding: 30% 0 0 0;
+	font-family: "gotham_bookregular";
+	font-weight: bold;
+}
+
+.ih-item.circle.effect17 .info p {
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: 0px;
+	font-family: "gotham_bookregular";
+}
+
+.ir_bt {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	margin: 0 45%;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.ih-item.circle.effect17 a:hover .img:before {
+	box-shadow: inset 0 0 0 335px rgba(0, 0, 0, 0.4), inset 0 0 0 0px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 0 0 335px rgba(0, 0, 0, 0.4), inset 0 0 0 0px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ih-item.circle.effect17 a:hover .info {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+.ih-item.circle.effect17 a:hover .info p {
+	opacity: 1;
+}
+
+/*FIM*/
+
+@media (max-width: 1366px) {
+	
+	.ih-item.circle.effect17 .info h3 {
+		font-size: 18px;
+	}
+	
+}
+
+@media (max-width: 1024px) {
+
+	.ih-item.circle.effect17 .info h3 {
+		font-size: 16px;
+	}
+	
+}
+
+@media (max-width: 992px) {
+	
+	.ih-item.square .ref_resp {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		height: auto;
+	}
+	
+	.ih-item.square.effect3 {
+		background-color: transparent;
+		margin: 0px 2px;
+	}
+
+	.ih-item.square.effect3 .img {
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+		-webkit-transition: none;
+		-moz-transition: none;
+		transition: none;
+	}
+
+	.ih-item.square.effect3 .info {
+		margin: 0;
+		padding: 0;
+		background: none;
+		opacity: none;
+		-webkit-transition: none;
+		-moz-transition: none;
+		transition: none;
+	}
+
+	.ih-item.square.effect3 .info h3 {
+		display: none;
+	}
+
+	.ih-item.square.effect3 .info p {
+		display: none;
+	}
+
+	.ih-item.square.effect3 a:hover .img {
+		opacity: 1;
+	}
+
+	.ih-item.square.effect3 a:hover .info {
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	.ref_resp {
+		display: block;	
+		width: 100%; 
+		background-color: rgba(60, 60, 60, 0.5);
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	.ref_resp h3 {
+		text-transform: uppercase;
+		color: #ffffff;
+		text-align: center;
+		font-size: 17px;
+		padding: 10px 10px 0 4px;
+		margin: 4px 0 0 0;
+		font-family: century gothic;
+	}
+
+	.ref_resp p {
+		font-size: 12px;
+		position: relative;
+		color: #ffffff;
+		padding: 5px;
+		text-align: center;
+		font-family: century gothic;
+		opacity: 0.5;
+	}
+
+}
+
+@media (max-width: 768px) {
+	
+	.ih-item.circle.effect17 .info h1 {
+		padding: 25% 0 0 0;
+	}
+		
+}
