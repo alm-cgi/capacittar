@@ -1,0 +1,2328 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
+@font-face {
+	font-family: "news";
+	src: url("fonts/news.otf"); /* para IE */
+	src: local("news"), url("fonts/news.ttf") format("opentype");
+}
+@font-face {
+	font-family: 'gotham_bookregular';
+    src: url('../fonts/gotham/gotham-book-webfont.eot');
+    src: url('../fonts/gotham/gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham/gotham-book-webfont.woff2') format('woff2'),
+         url('../fonts/gotham/gotham-book-webfont.woff') format('woff'),
+         url('../fonts/gotham/gotham-book-webfont.ttf') format('truetype'),
+         url('../fonts/gotham/gotham-book-webfont.svg#gotham_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.topo {
+	background-color: #EEEEEE;
+	height: 40px;
+}
+.tamanho_topo {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.tamanho_topo_2 {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	height:140px;
+}
+.capacittar {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: #8F8F8F;
+	font-weight: 300;
+	margin-top: 10px;
+}
+.fale_conosco {
+	font-family: 'news', sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+.menu {
+	font-family: 'news', sans-serif;
+	font-size: 12px;	
+}
+.banner_txt {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 40px;
+	color: #333333;
+	font-weight: 700;
+	width: 50%;
+}
+.banner_txt_ {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 23px;
+	color: #777777;
+	font-weight: 300;
+}
+.numero {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: #333333;
+	font-weight: 700;
+	text-align: left;
+}
+.txt_numero {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #525252;
+	font-weight: 300;
+	text-align: left;
+}
+.carousel-caption {
+	width:100%;
+	margin-top: 5%;
+	margin-left:-50px;
+}
+.botao_vagas {
+	height:43px;
+	width:180px;
+	background-color:#0095DA;
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	border-radius: 4px;
+	text-align:center;
+	line-height:3;
+	cursor:pointer;
+	margin-top: 2%;
+	float: left;
+}
+.botao_curriculo {
+	height:43px;
+	width:180px;
+	background-color:#333333;
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	border-radius: 4px;
+	text-align:center;
+	line-height:3;
+	cursor:pointer;
+	margin-left:5px;
+	margin-top: 2%;
+	float: left;
+}
+.areas {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #FFFFFF;
+	font-size: 32px;
+	text-align:center;
+	margin-top: 5%;
+}
+.botao_candidato {
+	height:43px;
+	width:465px;
+	background-color:#0095DA;
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	border-radius: 4px;
+	text-align:center;
+	line-height:2.3;
+	cursor:pointer;
+	margin-top:30px;
+}
+.botao_empresa {
+	height:43px;
+	width:465px;
+	background-color:#191919;
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	border-radius: 4px;
+	text-align:center;
+	line-height:2.3;
+	cursor:pointer;
+	margin-top:30px;
+}
+.tit_forms {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #000000;
+	font-size: 20px;
+	text-align:center;
+}
+.login_btn {
+	height:43px;
+	width:100%;
+	background-color:#0095DA;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	border-radius: 4px;
+	border: 0px;
+	text-align:center;
+	line-height:2.3;
+	cursor:pointer;
+	margin-top:10px;
+}
+.btn_tenhointeresse {
+	height:50px;
+	width:80%;
+	background-color:#0095DA;
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	border: 0px;
+	text-align:center;
+	line-height:2.5;
+	cursor:pointer;
+	margin-top:10px;
+}
+.btn_indicaramigo {
+	height:50px;
+	width:80%;
+	background-color:#0095DA;
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	border: 0px;
+	text-align:center;
+	line-height:2.5;
+	cursor:pointer;
+	margin-top:10px;
+}
+.depoimentos {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #525252;
+	font-size: 13px;
+	text-align:left;
+}
+.nome {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #000000;
+	font-size: 13px;
+	text-align:left;
+}
+.cargo {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #646464;
+	font-size: 13px;
+	text-align:left;
+}
+.txt_areas {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #FFFFFF;
+	font-size: 17px;
+	text-align:center;
+}
+.noticias_tit {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #333333;
+	font-size: 35px;
+	text-align:center;
+}
+.empresas_tit {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #FFFFFF;
+	font-size: 35px;
+	text-align:center;
+}
+.imagem_noticia {
+	background-image:url(imagens/border_noticia.png);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+	width:100%;
+	height: 5px;
+}
+.noticia {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #525252;
+	font-size: 14px;
+	width: 96%;
+	margin-top: 35px;
+	text-align: left;
+}
+.tit_noticia {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #FFFFFF;
+	font-size: 20px;
+	margin-top:-50px;
+	width:80%;
+}
+.tit_treinamento {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #0095DA;
+	font-size: 20px;
+}
+
+.tit_curriculos {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #0095DA;
+	font-size: 16px;
+}
+
+.datas {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #004F75;
+	font-size: 12px;
+}
+.carga {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #6B6C6D;
+	font-size: 14px;
+}
+.imagem {
+	opacity: 0.5;
+	margin-top:0px;
+}
+.imagem:hover {
+	opacity: 1;
+}
+.borda_img {
+	height:70px;
+	width:220px;
+	border: 1px solid #9B9C9C;
+}
+.borda_img:hover {
+	border: 1px solid #0076AE;
+}
+.tit_coaching {
+	font-family: 'Open Sans', sans-serif;
+	color: #FFFFFF;
+	font-size: 25px;
+	font-weight: 700;
+	margin-top: 100px;
+	margin-left: 50px;
+}
+.contato {
+	position: relative; 
+	height: 100%; 
+	margin-top: 80px; 
+	margin-bottom: 20px;	
+}
+.obrigatorio {
+	font-family: 'Open Sans', sans-serif;
+	color: #C00;	
+}
+
+.control-label {
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+}
+.codigo {
+	color: #333333;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+}
+.form_contato {
+	border-radius: 0;
+	resize: none;	
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+}
+.form_contato_plano {
+	border-radius: 0;
+	resize: none;	
+	font-family: 'Open Sans', sans-serif;
+	width:25%;
+}
+.form_status_vaga {
+	border-radius: 0;
+	resize: none;	
+	font-family: 'Open Sans', sans-serif;
+	width:35%;
+	height: 35px;
+}
+.env_contato {
+	height:43px;
+	width:100%;
+	background-color:#0095DA;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	border: 0px;
+	text-align:center;
+	line-height:2.3;
+	cursor:pointer;
+}
+.imprimir {
+	height:43px;
+	width:80%;
+	background-color:#0095DA;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	border: 0px;
+	text-align:center;
+	line-height:2.3;
+	cursor:pointer;
+}
+.voltar {
+	height:43px;
+	width:20%;
+	background-color:#0095DA;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	border: 0px;
+	text-align:center;
+	line-height:2.3;
+	cursor:pointer;
+	margin-top:20px;
+	margin-left:40%;
+}
+.env_renovacao {
+	height:43px;
+	width:25%;
+	background-color:#0095DA;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	border: 0px;
+	text-align:center;
+	line-height:2.3;
+	cursor:pointer;
+}
+.adc_emprego {
+	height:43px;
+	width:52%;
+	background-color:#0095DA;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	border: 0px;
+	text-align:center;
+	line-height:2.3;
+	cursor:pointer;
+}
+.adc_formacao {
+	width:70%;
+	background-color:#0095DA;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	border: 0px;
+	text-align:center;
+	line-height:2.3;
+	cursor:pointer;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.env_contato:hover,
+.env_contato:active,
+.env_contato.active,
+.env_contato:focus {
+	color: #ffffff;
+}
+.informacoes {
+	font-family: 'Open Sans', sans-serif;	
+}
+.nome_galeria {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	color: #FFFFFF;
+	vertical-align: middle;
+}
+.txt_coaching {
+	font-family: 'Open Sans', sans-serif;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: 300;
+	margin-top: 100px;
+}
+.b_galeria {
+	width: 205px;
+	height: 32px;
+	color: #FFFFFF;
+	font-size: 12px;
+	background-color: transparent;
+	border: 2px solid #FFFFFF;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 2.3;
+	margin-top: 15px;
+	cursor:pointer;
+}
+.rodape_tit {
+	width: 100%;
+	margin-top: 60px;
+}
+.rodape_tit h4 {
+	font-family: 'Open Sans', sans-serif;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 700;
+}
+.rodape_tit p {
+	font-family: 'Open Sans', sans-serif;
+	color: #FFFFFF;	
+	font-weight: 400;
+}
+.rodape_sub_tit {
+	font-family: 'Open Sans', sans-serif;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+.rodape_menu {
+	color: #828282;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+.fone {
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+}
+.news {
+	width: 82%;
+	height: 41px;
+	padding-left: 20px;
+	color: #A0A0A0;
+	font-size: 12px;
+	float: left;
+}
+.news_b {
+	width: 18%;
+	height: 41px;
+	padding-left: 3%;
+	padding-right: 3%;
+	color: #FFFFFF;
+	font-size: 12px;
+	background-color: #0095DA;
+	border: 0px;
+	margin-left:0px;
+	float: right;
+}
+.enviaramigo {
+	width: 80%;
+	height: 41px;
+	padding-left: 20px;
+	color: #A0A0A0;
+	font-size: 12px;
+}
+.enviaramigo_b {
+	width: 15%;
+	height: 41px;
+	color: #FFFFFF;
+	font-size: 12px;
+	background-color: #0095DA;
+	color: #FFFFFF;
+	border: 0px;
+	position:absolute;
+}
+.copyright {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #8D8D8D;
+	font-size: 12px;
+	margin-top:35px;
+}
+.capacittar_2 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #0095DA;
+	font-size: 12px;
+	margin-top:40px;
+}
+a.capacittar_2:hover {
+	text-decoration: underline;
+	color: #0095DA;
+}
+.mostra_normal {
+	display: block;
+	margin-bottom: 20px;
+}
+.mostra_resp {
+	display: none;
+}
+.logo {
+	width: 30%;	
+	margin-top: 38px;
+	margin-right: 80px;
+}
+.info_ {
+	width: 30%;	
+	margin-top: 45px;
+}
+.info_ p {
+	padding: 0;
+	margin: 0;
+}
+.info2_ {
+	width: 30%;	
+	margin-top: 28px;
+}
+.info2_ p {
+	padding: 0;
+	margin: 0;
+}
+.email_tit {
+	color: #333333;
+	font-family: 'news', sans-serif;
+	font-size: 22px;
+}
+.email {
+	color: #999999;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+.busca {
+	width: 60%;
+	border: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 1px;
+	border-top-left-radius: 1px;
+	color: #333;
+	font-family: 'gotham_bookregular';
+	float: left;
+	margin: 0;
+}
+.send {
+	width: 15%;
+	border: 0px;
+	border-bottom-right-radius: 1px;
+	border-top-right-radius: 1px;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+	color: #333;
+	float: left;
+	margin: 0;
+	
+	transition: background .25s ease-in-out;
+	-moz-transition: background .25s ease-in-out;
+	-webkit-transition: background .25s ease-in-out;
+}
+.send:hover,
+.send:active,
+.send.active,
+.send:focus {
+	color: #BF8228;
+	transition: background .25s ease-in-out;
+	-moz-transition: background .25s ease-in-out;
+	-webkit-transition: background .25s ease-in-out;
+}
+.campo_busca {
+	width: 33%;	
+	margin-top: 48px;
+}
+.campo_busca_resp {
+	display: none;	
+}
+.container-fluid {
+	margin: 0;
+	padding: 0;
+}
+.tamanho_menu {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.navbar-nav > li > a {
+	font-family: 'Open Sans', sans-serif;
+}
+.carousel-caption h1 {
+	font-family: 'Open Sans', sans-serif;
+}
+.carousel-caption h2 {
+	font-family: 'Open Sans', sans-serif;
+}
+.carousel-caption h3 {
+	font-family: 'Open Sans', sans-serif;
+}
+.caption_banner2 {
+	width: 35%;	
+}
+.caption_banner2 h1 {
+	font-family: 'gotham_boldregular';
+	margin-bottom: 20px;
+}
+.caption_banner2 h4 {
+	font-family: 'gotham_bookregular';
+	margin-bottom: 20px;
+}
+.caption_banner2 h4 a {
+	color:#BF8228;
+	text-decoration: none;
+}
+.slide_topo {
+	margin-top: 20px;	
+}
+.margin {
+	margin-top: 7px;	
+}
+.seta {
+	margin-left: auto;
+	margin-right: auto;	
+	margin-top: 13px;
+}
+.coluna_candidato {
+	width: 50%;
+	background-color:#191919;
+	height: 330px;
+}
+.coluna_empresa {
+	width: 50%;
+	background-color:#0076AE;
+	height: 330px;
+}
+.destaques {
+	border: 1px solid #CCC;	
+}
+.destaques h4 {
+	color: #000000;
+	font-family: 'gotham_bookregular';
+}
+.destaques p {
+	color: #333333;
+	font-family: 'gotham_lightregular';
+}
+.destaques p a {
+	color: #333333;
+	font-family: 'gotham_lightregular';
+	text-decoration: none;
+}
+.espaco-linhas {
+	height: 22px;	
+}
+.coluna_catalogo {
+	width: 51%;	
+}
+.b2 {
+	background-color: none;
+	margin: 0;
+	padding: 0;	
+	border: 0;
+}
+.leia {
+	opacity: 0.7;
+	margin: 0;
+	padding: 0;
+}
+.leia:hover {
+	opacity: 1;
+}
+.espaco_destaque {
+	padding: 10px;	
+}
+.cadastre {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.cadastro {
+	border-top: 1px solid #E5E5E5;
+	padding-top: 29px;
+	padding-bottom: 29px;
+	border-bottom: 1px solid #E5E5E5;	
+}
+.cadastro h4 {
+	color: #000000;
+	font-family: 'gotham_bookregular';
+	font-weight: bold;
+	opacity: 0.9;	
+}
+.newsletter {
+	border: 1px solid #515151;
+	border-radius: 0px;
+	width: 60%;
+	float: left;
+}
+.enviar {
+	color: #333333;
+	width: 15%;
+	float: left;
+	border-top: 1px solid #515151;
+	border-bottom: 1px solid #515151;
+	border-right: 1px solid #515151;
+	border-left: 0px;
+	border-radius: 0px;
+}
+.enviar:hover,
+.enviar:active,
+.enviar.active,
+.enviar:focus {
+	color: #BF8228;
+	transition: background .25s ease-in-out;
+	-moz-transition: background .25s ease-in-out;
+	-webkit-transition: background .25s ease-in-out;
+}
+.menu > ul > li {
+	font-family: 'Open Sans', sans-serif;
+	list-style-type: none;
+	float: left;
+	padding-right: 0;
+	padding-top: 25px;
+	padding-bottom: 35px;
+	margin: 0;
+	padding-left: 0;
+}
+.menu > ul > li > a {
+	color: #666;
+}
+.menu > ul > li > a:hover {
+	color: #BF8228;
+	text-decoration: none;
+}
+.icon {
+	height: 33px;
+	width: 33px;
+	float: right;
+	background-color: #000;
+	border-radius: 100px;
+	color: #ffffff;	
+	margin-left: 10px;
+	transition: background .25s ease-in-out;
+	-moz-transition: background .25s ease-in-out;
+	-webkit-transition: background .25s ease-in-out;
+}
+.twitter {
+	margin-left: 28px;
+	margin-right: 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.facebook {
+	margin-left: 28px;
+	margin-right: 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.icon:hover {
+	background-color: #BF8228;
+	transition: background .25s ease-in-out;
+	-moz-transition: background .25s ease-in-out;
+	-webkit-transition: background .25s ease-in-out;
+}
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox {
+    margin-bottom: 10px;
+}
+.form-signin .checkbox {
+    font-weight: normal;
+}
+.form-signin .form-control{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.account-wall {
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.login-title {
+    font-family: 'Open Sans', sans-serif;
+	color: #0095DA;
+	font-size: 23px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+.profile-img {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.need-help {
+    margin-top: 10px;
+}
+.new-account {
+    display: block;
+    margin-top: 10px;
+}
+h2 {
+  text-align: center;
+}
+.p {
+  text-align: center;
+  padding-top: 130px;
+}
+.margem {
+	display: none;
+}
+.rodape {
+	height:350px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.contato_rodape {
+	width: 23.3%;
+	margin-right: 6%;
+}
+.rodape_news {
+	width: 37.3%;
+}
+.margem_rodape {
+	width: 27.3%;
+	margin-right: 6%;	
+}
+.margem_tit {
+	 margin-top:7%;
+}
+.tabs_noticias{
+	width:75%;
+	height:40px;
+}
+.menu_ {
+	position: relative; 
+	left: 50%; 
+	margin-left: -50%;
+}
+.menu_cor {
+	width:100%; 
+	background-color:#0095DA;	
+}
+.margem_depoimentos {
+	margin-left:-350px;	
+}
+.linha {
+	border-bottom:1px solid #343434; 
+	margin-bottom:10px; 
+	margin-top:10px;
+}
+.linha_2 {
+	border-bottom:1px solid #343434; 
+	margin-bottom:10px;
+	margin-top:10px;
+	margin-right:30px;
+}
+.some_pc {
+	display: none;
+}
+.depo {
+	width: 95%; 
+	background-color: #F6F6F6;
+	height: auto;
+	background-image: url(../../imagens/depo.png);
+	background-position: left;
+	background-repeat: no-repeat;
+}
+.posicao_depoimentos {
+	width:85%; 
+	padding-top: 5%;
+	padding-left: 2%;
+	padding-bottom: 5%;
+}
+.posicao_nome {
+	 margin-left:0px;
+}
+.posicao_campo {
+	margin-top:-35px; 
+	margin-left:0;	
+}
+
+.filtrar {
+	height:35px;
+	width:65%;
+	background-color:#0095DA;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	border: 0px;
+	text-align:center;
+	line-height:2.3;
+	cursor:pointer;
+	margin-left: 15px;
+}
+
+.filtrar_2 {
+	height:35px;
+	width:80%;
+	background-color:#0095DA;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	border: 0px;
+	text-align:center;
+	line-height:2.3;
+	cursor:pointer;
+	margin-left: 15px;
+}
+
+
+.linha_noticias {	
+	width: 70%;
+}
+.tamanho_texto {
+	width: 70%;	
+}
+.item_noticias {
+	float: left;
+	width: 33.3%;	
+}
+.ballon {
+	width: 80%; 
+	background-image: url(../../imagens/detail_ballon.png); 
+	background-position: left; 
+	background-repeat: no-repeat; 
+	height: 23px;	
+}
+.margem_baixo {
+	margin-bottom:8%;
+}
+.dados {
+	width: 1000px; 
+	height:110px; 
+	background-image:url(../../imagens/bg_numeros.jpg); 
+	background-repeat:no-repeat; 
+	background-position:center top;
+	position:absolute;
+	z-index:10; 
+	margin-top: -125px; 
+	margin-left:50%; 
+	left: -500px;	
+}
+.margem_rodape2 {
+	width: 100%;	
+}
+.resp_linha {
+	display: none;	
+}
+.dados h4 {
+	font-family: 'Open Sans', sans-serif;
+	color: #333333;
+	font-size: 20px;
+	font-weight: 700;
+	margin: 0;
+}
+.dados p {
+	font-family: 'Open Sans', sans-serif;
+	color: #525252;
+	font-weight: 400;
+	margin: 0;
+}
+.vagas {
+	width: 30%;
+}
+.candidatos {
+	width: 30%;
+}
+.empresas {
+	width: 30%;
+}
+.separa {
+	width: 5%;
+}
+.margem_num_topo {
+	padding-top: 12%;
+}
+.noticias {
+	height:575px;	
+}
+.rodape_ult {
+	height:80px;
+}
+.coaching {
+	background-image:url(../../imagens/coaching.png); 
+	background-repeat:no-repeat; 
+	background-position:top center; 
+	position:absolute; 
+	height:250px; 
+	width:1000px; 
+	z-index:11; 
+	margin-top:-55px; 
+	margin-left:50%; 
+	left: -500px;	
+}	
+.tit_coaching {
+	margin-top: 17px;
+	margin-left: 0px;
+	width: 25%;
+}
+.txt_coaching {
+	margin-top: 17px;	
+	width: 45%;
+	margin-right: 5%;
+}
+.img_coaching{	
+	width: 25%;
+	background-color: #ffffff;
+	padding: 1%;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	margin-top: 16px;	
+}
+.coach_cons {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;	
+}	
+.margem_tit2 {
+	margin-top:8%;
+}
+.anunciantes {
+	background-image:url(../../imagens/bg_empresas.jpg); 
+	background-repeat:no-repeat; 
+	background-position:top center; 
+	height:370px;
+}
+.linha_resp {
+	margin-top:-25px;
+}
+.tam_camp1 {
+	width: 46%;
+	margin-right: 4%;
+}
+.tam_camp2 {
+	width: 46%;
+	margin-left: 4%;
+}
+.colunas {
+	margin-bottom: 20px;
+	padding-right: 20px;
+	height: 200px;
+}
+@media (max-width: 1499px) {
+.rodape {
+	width: 80%;
+}
+}
+
+@media (max-width: 1490px) {
+.linha_noticias {	
+	width: 75%;
+}
+.tamanho_texto {
+	width: 75%;	
+}
+}
+
+@media (max-width: 1366px) {
+
+}
+
+@media (max-width: 1362px) {
+.margem_tit {
+	margin-top:8%;
+}
+.carousel-caption {
+	margin-top: 4%;
+}
+.linha_noticias {	
+	width: 80%;
+}
+.tabs_noticias {
+	width:80%;
+}
+.tamanho_texto {
+	width: 80%;	
+}
+}
+
+@media (max-width: 1315px) {
+.rodape {
+	width: 85%;
+}
+}
+
+@media (max-width: 1270px) {
+.img_noticia {
+	padding-left: 3%;
+	padding-right: 3%;	
+}	
+}
+
+@media (max-width: 1280px) {
+.carousel-caption {
+	margin-top: 5%;
+}
+.banner_txt {
+	font-size: 28px;
+}
+.posicao_depoimentos {
+	width:80%; 
+}
+.margem_tit2 {
+	 margin-top:10%;
+}
+}
+
+@media (max-width: 1260px) {
+.rodape {
+	width: 90%;
+}
+}
+
+@media (max-width: 1218px) {
+.contato_rodape {
+	width: 25.3%;
+	margin-right: 6%;
+}
+.rodape_news{
+	width: 35.3%;
+}
+}
+
+@media (max-width: 1200px) {
+.dados {
+	margin-top: -115px; 
+}
+}
+
+@media (max-width: 1160px) {
+.tit_noticia {
+	margin-left: -30px; 
+}
+
+}
+
+@media (max-width: 1152px) {
+.capacittar{
+	width: 60%;
+}
+.social {
+	width: 10%;
+}
+.fale {
+	width: 20%;
+}
+.some_pc {
+	display: table;
+	visibility: visible;
+}
+.coluna_candidato {
+	width: 50%;
+	margin-top: 0px;
+	float: left;
+}
+.coluna_empresa {
+	width: 50%;
+	margin-top: 0px;
+	float: right;
+}
+.margem {
+	display: table;
+}
+.botao_candidato {
+	width: 80%;
+}
+.botao_empresa {
+	width: 80%;
+}
+.tamanho_topo_2 {
+	height:105px;
+	width: 90%;
+}
+.logo { 
+	margin-top: 20px;
+}
+.carousel-control {
+	left: 11%;
+}
+.logo {
+	width: 35%;	
+}
+.info_ {
+	width: 25%;
+ 	margin-top: 28px;	
+}
+.info2_ {
+	width: 30%;		
+	margin-top: 15px;	
+}
+.dados {
+	margin-top: -110px; 
+}
+.email_tit {
+	font-size: 19px;
+}
+.rodape {
+	height:auto;
+	margin-bottom: 5%;
+}
+.imagem {
+	opacity: 0.5;
+	margin-top:0px;
+}
+.margem_tit {
+	margin-top:20px;
+}
+/*.form-control {
+	width: 90%;
+	margin-left: 5%;
+}*/
+.env_contato {
+	width:90%;
+	margin-left: 5%;
+}
+.margem_left {
+	margin-left: 5%;
+}
+.menu_ {
+	position: relative; 
+	left: 0%; 
+	margin-left: 0%;
+}
+.margem_depoimentos {
+	margin-left:-100px;	
+}
+.margem_rodape {
+	width: 25%;
+}
+.linha {
+	border-bottom:1px solid #343434; 
+	margin-bottom:10px;
+	margin-top:10px;
+	margin-right:30px;
+}
+.posicao_depoimentos {
+	width:90%; 
+	margin-left: 25px;
+}
+/*.margem_forms {
+	margin-left: 20px;
+}*/
+/*.form-control_cpf {
+	width: 44%;
+	margin-left:5%;
+}*/
+.posicao_campo {
+	margin-top:-35px; 
+	margin-left: 205px;	
+}
+/*.form-control_rua {
+	width: 60%;
+	margin-left:5%;
+}*/
+/*.margem_forms_uf {
+	margin-top:-35px; 
+	margin-left: 67%;	
+}*/
+.areas {
+	margin-top: 0;
+}
+.rodape_news {
+	width: 29.3%;
+}
+.margem_rodape {
+	width: 33.3%;
+	margin-right: 6%;	
+}
+.lado1 {
+	width: 70%;
+	float: left;
+}
+.lado2 {
+	width: 30%;
+	float: left;
+}
+}
+
+@media (max-width: 1147px) {
+.tabs_noticias{
+	width:80%;
+}
+.margem_tit2{
+	margin-top:11.5%;
+}
+}
+
+@media (max-width: 1095px) {
+.depo {
+	padding-right: 5%;
+}
+.dados {
+	margin-top: -100px; 
+}
+.tit_noticia{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+}
+
+@media (max-width: 1075px) {
+.nav > li > a {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.dados {
+	width: 100%; 
+	height:110px; 
+	background-image:url(../../imagens/bg_numeros.jpg); 
+	background-repeat:repeat-x; 
+	background-position:center top;
+	position:relative;
+	z-index:10; 
+	margin: 0;
+	left: 0; 
+}
+.mostra_normal {
+	margin-bottom: 0px;
+}
+}
+
+@media (max-width: 1035px) {	
+.anunciantes {
+	background-image:url(../../imagens/bg_empresas.jpg);
+	background-repeat:no-repeat; background-position:top center; 
+	height:auto;
+	padding-bottom: 8%;
+}
+.margem_tit2{
+	margin-bottom:3%;
+}
+}
+
+@media (max-width: 1024px) {	
+.depo {
+	padding-left: 5%;
+	padding-bottom: 5%;
+}
+.nav > li > a {
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.banner_txt {
+	width: 65%;
+	font-size: 30px;
+}
+.carousel-caption {
+	margin-top: 7%;	
+}
+.linha_noticias {	
+	width: 90%;
+}
+.tabs_noticias {
+	width:90%;
+}
+.nav-tabs > li > a {
+	padding-top: 10px;
+}
+}
+
+@media (max-width: 1018px) {
+.coaching {
+	background-color: #0076AE;
+	position:relative; 
+	height:auto; 
+	width:100%; 
+	margin-top:0; 
+	margin-left:0; 
+	left: 0;
+	padding-top: 3%;	
+	padding-bottom: 3%;	
+	background-image: none;	
+}
+.margem_tit2 {
+	margin-top:8%;
+}	
+.tit_coaching {
+	margin-top: 0px;
+	margin-left: 0px;
+	width: 25%;
+}
+.txt_coaching {
+	margin-top: 0px;
+	width: 45%;
+	margin-right: 5%;
+}
+.img_coaching {
+	width: 25%;
+	background-color: #ffffff;
+	padding: 1%;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	margin: 0;
+}
+.coach_cons {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;	
+}
+.margem_baixo {
+	margin-bottom:4%;
+}
+}
+
+@media (max-width: 1010px) {	
+.tit_coaching {
+	float: left;
+	margin-right: 5%;
+}
+.txt_coaching {
+	width: 40%;
+	float: left;
+}
+.img_coaching {	
+	float: left;
+}
+.margem_tit2 {
+	margin-bottom:5%;
+}
+}
+
+@media (max-width: 992px) {	
+.resp_linha {
+	display: block;	
+}
+.lado1 {
+	width: 100%;
+	float: none;
+}
+.lado2 {
+	width: 100%;
+	float: none;
+}
+.rodape_news {
+	width: 31.3%;
+	float: left;
+}
+.margem_rodape {
+	width: 28.3%;
+	margin-right: 3%;	
+	float: left;
+}
+.contato_rodape {
+	width: 30.3%;
+	margin-right: 5%;
+	float: left;
+}
+.tamanho_topo {
+	width: 90%;
+}
+.capacittar {
+	width: 70%;
+	float: left;
+}
+.social {
+	width: 10%;
+	float: left;
+}
+.fale {
+	width: 20%;
+	float: right;
+}
+.vagas {
+	float: left;
+}
+.candidatos {
+	float: left;
+}
+.empresas {
+	float: left;
+}
+.separa {
+	float: left;
+}
+.icone_num {
+	float: left;
+	width: 30%;
+}
+.num {
+	float: left;
+	width: 70%;
+}
+.margem_icone {
+	padding-right: 10%;
+}
+.coluna_candidato {
+	height: 350px;
+}
+.coluna_empresa {
+	height: 350px;
+}	
+.logo {
+	width: 30%;	
+	float: left;
+	margin-top: 26px;
+}
+.info_ {
+	width: 30%;
+	float: left;	
+}
+.info2_ {
+	width: 30%;		
+	float: left;
+}
+.contato {
+	width: 70%;
+}
+.margem_dois {
+	margin-bottom: 15px;
+}
+.tam_camp1 {
+	width: 100%;
+	margin-right: 0;
+}
+.tam_camp2 {
+	width: 100%;
+	margin-left: 0;
+}			
+}
+
+@media (max-width: 927px) {	
+.depo {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+}
+
+@media (max-width: 905px) {	
+.email_tit {
+	font-size: 17px;
+}
+.email {
+	font-size: 14px;
+}
+.tamanho_topo_2 {
+	width: 90%;
+}
+.logo {
+	margin-right: 10%;
+}	
+.info_ {
+	width: 30%;
+}
+.info2_ {
+	width: 30%;		
+	
+}	
+}
+
+@media (max-width: 875px) {	
+.capacittar{
+	width: 65%;
+	float: left;
+}
+.social {
+	width: 10%;
+	float: left;
+}
+.fale {
+	width: 25%;
+	float: right;
+}
+.tit_noticia{
+	font-size: 18px;
+	margin-top: 15px;
+	text-align: left;
+	width: 94%;
+	color: #525252;
+}
+.noticia{
+	margin-top: 15px;	
+	width: 88%;
+	margin-left: -5%;
+}
+}
+
+@media (max-width: 835px) {	
+.nav > li > a {
+	padding-left: 12px;
+	padding-right: 12px;
+	font-size: 13px;
+}
+.txt_coaching{
+	width: 42%;
+	float: left;
+}
+.tit_coaching {
+	width: 20%;
+	margin-right: 8%;
+	font-size: 20px;
+}	
+}
+
+@media (max-width: 820px) {	
+.fone {
+	width: 45%;
+}
+.resp_linha {
+	display: none;	
+}
+.lado1{
+	width: 50%;
+	float: left;
+}
+.lado2 {
+	width: 50%;
+	float: left;
+}
+.rodape_news {
+	width: 100%;
+	float: left;
+	margin: 0;
+}
+.margem_rodape {
+	width: 45%;
+	margin-right: 5%;	
+	float: left;
+}
+.contato_rodape {
+	width: 45%;
+	margin-right: 5%;
+	float: left;
+}
+.rodape_tit {
+	width: 100%;
+	margin-top: 40px;
+}
+.rodape {
+	margin-bottom:  40px;
+}
+.margem_num_topo {
+	padding-top: 15%;
+}
+.carousel-caption {
+	margin-top: 5.5%;
+}
+}
+
+@media (max-width: 790px) {	
+.margem_rodape {
+	width: 55%;
+	margin-right: 5%;	
+	float: left;
+}
+.contato_rodape {
+	width: 35%;
+	margin-right: 5%;
+	float: left;
+}
+.topo {
+	height: auto;
+}
+}
+
+@media (max-width: 768px) {	
+.colunas {
+	margin-bottom: 20px;
+	padding-right: 20px;
+	height: auto;
+}
+.capacittar {
+	width: 61%;
+	float: left;
+}
+.social {
+	width: 13%;
+	float: left;
+}
+.fale {
+	width: 26%;
+	float: right;
+}
+.navbar-header {
+	background-color: #0095DA;
+}
+.navbar-default {
+	height: 0;
+} 
+.logo {
+	width: 33%;	
+	margin-right: 7%;
+	margin-top: 29px;
+}
+.carousel-caption {
+	left: 0;	
+	margin-left: 10%;
+} 
+.areas{
+	font-size: 28px;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	height: 63px;
+	border-bottom: 0px;
+}
+}
+
+@media (max-width: 730px) {	
+.botao_vagas {
+	height: 40px;
+	font-size: 13px;
+}
+.botao_curriculo {
+	height: 40px;
+	font-size: 13px;
+}
+.banner_txt {
+	font-size: 25px;
+}
+
+.email_tit {
+	font-size: 15px;
+}
+.email {
+	font-size: 13px;
+}
+.logo {
+	width: 30%;
+	margin-right: 8%;
+	margin-top: 32px; 
+}	
+.info_ {
+	width: 33%;
+}
+.info2_ {
+	width: 27%;		
+}
+.botao_candidato {
+	height:36px;
+	width: 80%;
+	font-size: 15px;
+}
+.botao_empresa {
+	height:36px;
+	width: 80%;
+	font-size: 15px;
+}
+}
+
+@media (max-width: 707px) {	
+.txt_coaching {
+	width: 40%;
+}
+.tit_coaching {
+	width: 22%;
+}
+}
+
+@media (max-width: 700px) {	
+.rodape {
+	width: 75%;
+}
+.margem_rodape {
+	width: 100%;
+	margin-right: 0;	
+	float: none;
+}
+.contato_rodape {
+	width: 100%;
+	margin-right: 0;	
+	float: none;
+}
+.rodape_news {
+	width: 100%;
+	float: none;
+	margin: 0;
+}
+.fone {
+	width: 80%;
+}
+.rodape_tit {
+	margin-top: 10%;
+}
+.rodape {
+	margin-bottom:  10%;
+}
+.areas {
+	font-size: 25px;
+}
+.txt_areas {
+	font-size: 15px;
+}
+.coluna_candidato {
+	height: 310px;
+}
+.coluna_empresa {
+	height: 310px;
+}
+}
+
+@media (max-width: 680px) {	
+.capacittar {
+	width: 55%;
+	float: left;
+}
+.social {
+	width: 15%;
+	float: left;
+}
+.fale {
+	width: 30%;
+	float: right;
+}
+.info_ {
+	display: none;
+}
+.info2_ {
+	display: none;
+}
+.logo {
+	width: 45%;
+	margin-right: 8%;
+	margin-top: 27px;
+}	
+}
+
+@media (max-width: 640px) {	
+.banner_txt {
+	font-size: 20px;
+}
+.banner_txt_ {
+	font-size: 18px;
+}
+.botao_candidato {
+	font-size: 14px;
+	height: 31px;
+}
+.botao_empresa {
+	font-size: 14px;
+	height: 31px;
+}
+.txt_areas {
+	font-size: 14px;
+}
+.item_noticias {
+	float: none;
+	width: 100%;
+	margin-top: 5%;	
+}
+.noticias {
+	height:auto;
+	padding-bottom: 8%;	
+}
+.noticia{
+	width: 55%;
+	margin-left: 0%;
+}
+.tit_noticia {
+	width:55%;
+}
+.copyright {
+	margin-bottom:28px;
+}
+.rodape_ult {
+	height:auto;
+}
+.txt_coaching {
+	width: 50%;
+	margin-right: 5%;
+	margin-top: 3%;
+}
+.img_coaching {
+	width: 45%;
+	margin-top: 5%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tit_coaching {
+	width: 100%;
+	float: none;
+	text-align: center;
+	padding-top: 3%;
+}
+	
+.coaching {
+	padding-bottom: 6%;	
+}
+	
+.b_galeria{
+	width: 50%;
+}	
+}
+
+@media (max-width: 610px) {	
+.b_galeria{
+	width: 60%;
+}	
+}
+
+@media (max-width: 605px) {	
+.capacittar{
+	width: 52%;
+	float: left;
+}
+.social {
+	width: 15%;
+	float: left;
+}
+.fale {
+	width: 33%;
+	float: right;
+}
+}
+
+@media (max-width: 590px) {	
+.areas{
+	font-size: 22px;
+}
+.carousel-control {
+  height: 35px;
+  width: 32px;
+}
+.seta {
+	margin-top: 10px;
+	height: 15px;
+	width: 9px;
+}
+.carousel-control.right {
+	margin-left: 38px;
+}	
+.carousel-caption{
+	margin-top: 5%;
+}
+.botao_candidato{
+	font-size: 13px;
+	height: 29px;
+}
+.botao_empresa{
+	font-size: 13px;
+	height: 29px;
+}
+.botao_vagas{
+	height: 33px;
+	font-size: 13px;
+	line-height: 33px;
+}
+.botao_curriculo{
+	height: 33px;
+	font-size: 13px;
+	line-height: 33px;
+}
+.icone_num {
+	float: left;
+	width: 40%;
+}
+.num  {
+	float: left;
+	width: 60%;
+}
+.facebook {
+	margin-left: 22px;
+}
+.margem_tit2 {
+	margin-bottom:10%;
+}
+}
+
+@media (max-width: 544px) {	
+.facebook {
+	margin-left: 20px;
+}
+.capacittar {
+	width: 49%;
+	float: left;
+}
+.social {
+	width: 16%;
+	float: left;
+}
+.fale {
+	width: 35%;
+	float: right;
+}
+.noticia {
+	width: 70%;
+}
+.tit_noticia {
+	width:70%;
+}
+.tabs_noticias {
+	height:auto;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+	height: auto;
+}
+.nav-tabs > li > a {
+	height: auto;	
+}
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+	height:auto;
+}
+.adc_formacao {
+	width: 100%;
+}
+}
+
+@media (max-width: 535px) {	
+.nav-tabs > li > a {
+	font-size: 11px;
+}
+}
+
+@media (max-width: 530px) {	
+.resp_linha {
+	display: block;	
+}
+.lado1 {
+	width: 100%;
+	float: none;
+}
+.lado2 {
+	width: 100%;
+	float: none;
+}
+.news {
+	width: 75%;
+	height: 41px;
+	padding-left: 20px;
+	color: #A0A0A0;
+	font-size: 12px;
+	float: left;
+}
+.news_b {
+	width: 25%;
+	height: 41px;
+	padding-left: 5%;
+	padding-right: 5%;
+	color: #FFFFFF;
+	font-size: 12px;
+	background-color: #0095DA;
+	border: 0px;
+	margin-left:0px;
+	float: right;
+}
+.fone {
+	width: 100%;
+}
+.banner_txt {
+	font-size: 18px;
+}
+.banner_txt_ {
+	font-size: 16px;
+}
+.logo {
+	width: 55%;	
+}
+.txt_areas{
+	font-size: 13px;
+}
+}
+
+@media (max-width: 517px) {	
+.coluna_candidato {
+	width: 100%;
+	float: none;
+	height: auto;
+	padding-bottom: 6%;
+	padding-top: 2%;
+}
+.coluna_empresa {
+	width: 100%;
+	float: none;
+	height: auto;
+	padding-bottom: 6%;
+	padding-top: 2%;
+}
+}
+
+@media (max-width: 508px) {	
+.capacittar {
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.fale {
+	display: none;
+}
+.social {
+	display: none;
+}
+}
+
+@media (max-width: 500px) {	
+.noticia {
+	width: 79%;
+}
+.tit_noticia {
+	width:79%;
+}
+}
+
+@media (max-width: 480px) {	
+.tamanho_topo_2 {
+	height:auto;
+}
+.logo {
+	width: 64%;	
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.carousel-caption {
+	position: relative;
+	background-color: #F5F5F5;
+	margin: 0;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 5%;
+	padding-bottom: 15%;
+}
+.dados {
+	height:auto; 
+	background-repeat: repeat;
+	background-image:none;
+}
+.vagas {
+	width: 100%;
+	background-image:url(../../imagens/background_.png);
+	background-repeat: repeat-x;
+	float: none;
+	padding-bottom: 5%;
+	padding-top: 5%;
+	border-bottom: 3px solid #DDDDDD;
+	border-top: 3px solid #DDDDDD;
+}
+.candidatos {
+	width: 100%;
+	background-image:url(../../imagens/background_.png);
+	background-repeat: repeat-x;
+	float: none;
+	padding-bottom: 5%;
+	padding-top: 5%;
+	border-bottom: 3px solid #DDDDDD;
+}
+.empresas {
+	width: 100%;
+	background-image:url(../../imagens/background_.png);
+	background-repeat: repeat-x;
+	float: none;
+	padding-bottom: 5%;
+	padding-top: 5%;
+	border-bottom: 3px solid #DDDDDD;
+}
+.separa {
+	display: none;
+}
+.margem_num_topo {
+	padding-top: 0;
+}
+.botao_curriculo{
+	margin-left: 0;
+}
+.txt_coaching{
+	width: 100%;
+	margin-right: 0;
+	margin-top: 3%;
+	float: none;
+	text-align: center;
+}
+.img_coaching {
+	width: 60%;
+	margin-top: 5%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	padding: 2%;
+}
+.b_galeria {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.noticias_tit {
+	font-size: 28px;
+	line-height: 30px;
+}
+.banner_txt {
+	width: 75%;
+}
+.linha_resp {
+	margin-top:-10px;
+}
+.margem_tit2 {
+	margin-bottom:15%;
+}
+}
+
+@media (max-width: 415px) {	
+.botao_curriculo{
+	margin-left: 0;
+}
+.carousel-caption {
+	padding-bottom: 25%;
+}
+}
+
+@media (max-width: 380px) {	
+.adc_formacao {
+	font-size: 14px;
+}
+.logo {
+	width: 75%;	
+}
+.noticia{
+	width: 85%;
+}
+.tit_noticia{
+	width:85%;
+}
+.banner_txt {
+	width: 90%;
+}
+.depo {
+	padding-top: 5%; 
+	padding-bottom: 5%;  	
+}
+.margem_tit2 {
+	margin-bottom:20%;
+}
+.carousel-caption {
+	padding-bottom: 35%;
+}
+}	
+
+@media (max-width: 340px) {	
+.img_coaching {
+	width: 75%;
+}
+.b_galeria{
+	width: 60%;
+}
+}
+
+@media (max-width: 320px) {	
+.adc_formacao {
+	font-size: 13px;
+}
+}
+
