@@ -47,9 +47,39 @@
 <script src="./bootstrap/js/bootstrap.js"></script>
 <script src="./jquery.js"></script>
 <script src="./jquery.scrollto.js"></script>
+<script>
+    function carregaNoticias() {
+        let noticias = [
+            {
+                id: 26,
+                capa: "236925730_553494862744940_8520896918610064154_n.jpg"
+
+            },
+            {
+                id: 25,
+                capa: "242190175_576103343817425_4833523306331227878_n.jpg"
+            }
+
+        ]
+
+        let noticiasHtml = "";
+
+        for (let x in noticia) {
+
+            noticiasHtml = 
+'<div class="container"><div class="row"><div class="col-md-12 noticias_tit" style="margin-top:30px;"><img src="./imagens/linha_azul.png" class="linha_resp"></div>    </div><div class="row"><div class="col-md-4"><img class="img-responsive" src="./admin/imagens/' + x.capa + '" style="padding-bottom: 3%;"></div><div class="col-md-8"></div></div><div class="row" style="height:20px;"></div></div>';
+
+            document.getElementById("noticias").innerHTML = noticiasHtml;
+        }
+
+    }
+    function carregaSessoes() {
+        carregaNoticias();
+    }
+</script>>
 </head>
 
-<body>
+<body onload="carregaSessoes()">
 
 <!--TOPO-->
 <header>
@@ -110,7 +140,7 @@
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <div class="mostra_normal"><img src='./admin/imagens/01.jpg' class="img-responsive"></div>
+            <div class="mostra_normal"><img src="./admin/imagens/01.jpg" class="img-responsive"></div>
             <div class="carousel-caption">
               <div class="banner_txt">À PROCURA DE EMPREGO? TEMOS VAGAS DISPONÍVEIS!</div>
               <div class="banner_txt_">NÃO PERCA A OPORTUNIDADE!</div>
@@ -132,6 +162,9 @@
 
 <!--CONTEUDO-->
 <div id="irpara"></div>
+
+<!--CONTEUDO-->
+<div id="noticias"></div>
 
 <footer>
   <div class="noprint">
