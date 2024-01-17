@@ -50,31 +50,29 @@
 <script>
     function carregaNoticias() {
         let noticias = [
-            {
-                id: 26,
-                capa: "236925730_553494862744940_8520896918610064154_n.jpg"
-
-            },
-            {
-                id: 25,
-                capa: "242190175_576103343817425_4833523306331227878_n.jpg"
-            }
-
-        ]
-
+          {id: 26,capa: "noticia26.jpg"},
+          {id: 28,capa: "noticia28.jpg"},
+          {id: 29,capa: "noticia29.jpg"},
+          {id: 30,capa: "noticia30.jpg"},
+          {id: 31,capa: "noticia31.jpg"},
+          {id: 32,capa: "noticia32.jpg"},
+          {id: 33,capa: "noticia33.jpg"}
+        ]        
+        
         let noticiasHtml = "";
-/*
+        
         for (let x in noticias) {
+          
+          noticiasHtml = 
+'            <a href="./noticiasinterna/' + noticias[x].id + '.html">\
+              <div class="item item_noticias">\
+                <img class="img-responsive img_noticia" src="admin/imagens/' + noticias[x].capa + '"> \
+                <img class="img-responsive img_noticia" src="imagens/border_noticia.png" style="margin-top:-180px;">\
+              </div>\
+            </a>';
 
-            noticiasHtml = 
-'<div class="container"><div class="row"><div class="col-md-12 noticias_tit" style="margin-top:30px;"><img src="./imagens/linha_azul.png" class="linha_resp"></div>    </div><div class="row"><div class="col-md-4"><img class="img-responsive" src="./admin/imagens/' + noticias[x].capa + '" style="padding-bottom: 3%;"></div><div class="col-md-8"></div></div><div class="row" style="height:20px;"></div></div>';
-
-            document.getElementById("noticias").innerHTML =   
-'<div class="container-fluid noticias" style="background-color:#F6F6F6; "><div class="row" id="noticia"><div class="col-md-12 noticias_tit" style="margin-top:30px;">NOTÍCIAS <br /><img class="linha_resp" src="http://www.capacittar.com.br/imagens/linha_azul.png"></div></div><div class="row"><div align="center">' + noticiasHtml + '</div></div></div>';
-        }*/
-
-        document.getElementById("noticias").innerHTML = '<img class="img-responsive" src="./admin/imagens/236925730_553494862744940_8520896918610064154_n.jpg" style="padding-bottom: 3%;">';
-
+            document.getElementById("noticias").innerHTML += noticiasHtml; 
+        }
     }
     function carregaSessoes() {
         carregaNoticias();
@@ -83,7 +81,6 @@
 </head>
 
 <body onload="carregaSessoes()">
-
 <!--TOPO-->
 <header>
   <div class="noprint">
@@ -148,10 +145,10 @@
               <div class="banner_txt">À PROCURA DE EMPREGO? TEMOS VAGAS DISPONÍVEIS!</div>
               <div class="banner_txt_">NÃO PERCA A OPORTUNIDADE!</div>
               <a href="https://sistemarecursoshumanos.com.br/capacittar/ssi/vagas" style="text-decoration:none">
-              <div class="botao_vagas">VAGAS DISPONÍVEIS</div>
+                <div class="botao_vagas">VAGAS DISPONÍVEIS</div>
               </a>
-			  <a href="https://sistemarecursoshumanos.com.br/capacittar/ssi/" style="text-decoration:none"> <!--ALM-->
-              <div class="botao_curriculo">ENVIE SEU CURRICULO</div>
+			        <a href="https://sistemarecursoshumanos.com.br/capacittar/ssi/" style="text-decoration:none"> <!--ALM-->
+                <div class="botao_curriculo">ENVIE SEU CURRICULO</div>
               </a>
             </div>
           </div>
@@ -166,8 +163,133 @@
 <!--CONTEUDO-->
 <div id="irpara"></div>
 
-<!--CONTEUDO-->
-<div id="noticias"></div>
+    <!--NOTÍCIAS-->
+    <div id="irparanoticias"></div>
+    <div class="container-fluid noticias" style="background-color:#F6F6F6;">	
+    
+      <div class="row" id="noticia">
+        <div class="col-md-12 noticias_tit" style="margin-top:30px;">
+            NOTÍCIAS <br />
+            <img class="linha_resp" src="./imagens/linha_azul.png">
+        </div>
+      </div>
+    
+      <div class="row">
+        <div align="center">
+          <ul class="nav nav-tabs tabs_noticias">
+            <li class="active"><a href="#tab1" data-toggle="tab">NOTÍCIAS</a></li>
+            <li><a href="#tab2" data-toggle="tab">TREINAMENTOS E CURSOS</a></li>
+            <!--<li><a href="#tab3" data-toggle="tab">COACHING</a></li>-->
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+              <div class="container-fluid" align="center">
+                <div class="tab-content center-block">
+                  <div class="tab-pane fade in active" style="margin-top:30px;">
+                    <div class="line linha_noticias">        
+                      <div id="noticias"></div>
+                    </div>
+                  </div>            
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIM NOTICIAS -->
+    
+    
+    <!--DEPOIMENTOS-->
+    <div id="irparadepoimentos"></div>
+    <div class="container-fluid" style="background-color:#ffffff;" id="depoimentos">	
+    
+    <div class="row">
+        <div class="col-md-12 noticias_tit margem_tit2" style="margin-top:30px;">
+          DEPOIMENTOS <br />
+          <img src="./imagens/linha_azul.png" class="linha_resp">
+        </div>    
+    </div>
+    
+    <div class="row margem_baixo" style="margin-top:0px;">
+  
+      <div class="container-fluid" align="center">
+        <div class="tab-content  center-block">        
+          <div class="tab-pane fade in active">
+            <div class="line">
+              <div id="owl-demo1" class="owl-carousel">
+                <div style="width: *;">
+                  <a href="./depoimentosinterna/depoimento1">
+                    <div class="item depo">
+                      <div align="right" class="depoimentos posicao_depoimentos">
+                        Pessoas comprometidas com o que se propõe a fazer. Recomendo para quem estiver em busca de oportunidades de trabalho e estejam dispostos a isso!
+                      </div>
+                    </div>
+                    <div class="ballon"></div>
+                      <div style="width: 95%; text-align: left;">
+                        <span class="nome posicao_nome">Aline Spenassato</span>
+                      </div>
+                  </a>
+                  <a href="./depoimentosinterna/depoimento1">
+                    <div class="item depo">
+                      <div align="right" class="depoimentos posicao_depoimentos">
+                        Pessoas comprometidas com o que se propõe a fazer. Recomendo para quem estiver em busca de oportunidades de trabalho e estejam dispostos a isso!
+                      </div>
+                    </div>
+                    <div class="ballon"></div>
+                      <div style="width: 95%; text-align: left;">
+                        <span class="nome posicao_nome">Aline Spenassato</span>
+                      </div>
+                  </a>
+                  <a href="./depoimentosinterna/depoimento1">
+                    <div class="item depo">
+                      <div align="right" class="depoimentos posicao_depoimentos">
+                        Pessoas comprometidas com o que se propõe a fazer. Recomendo para quem estiver em busca de oportunidades de trabalho e estejam dispostos a isso!
+                      </div>
+                    </div>
+                    <div class="ballon"></div>
+                      <div style="width: 95%; text-align: left;">
+                        <span class="nome posicao_nome">Aline Spenassato</span>
+                      </div>
+                  </a>
+                  <a href="./depoimentosinterna/depoimento1">
+                    <div class="item depo">
+                      <div align="right" class="depoimentos posicao_depoimentos">
+                        Pessoas comprometidas com o que se propõe a fazer. Recomendo para quem estiver em busca de oportunidades de trabalho e estejam dispostos a isso!
+                      </div>
+                    </div>
+                    <div class="ballon"></div>
+                      <div style="width: 95%; text-align: left;">
+                        <span class="nome posicao_nome">Aline Spenassato</span>
+                      </div>
+                  </a>
+                  <a href="./depoimentosinterna/depoimento1">
+                    <div class="item depo">
+                      <div align="right" class="depoimentos posicao_depoimentos">
+                        Pessoas comprometidas com o que se propõe a fazer. Recomendo para quem estiver em busca de oportunidades de trabalho e estejam dispostos a isso!
+                      </div>
+                    </div>
+                    <div class="ballon"></div>
+                      <div style="width: 95%; text-align: left;">
+                        <span class="nome posicao_nome">Aline Spenassato</span>
+                      </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
 
 <footer>
   <div class="noprint">
