@@ -55,41 +55,9 @@
   <script src="./bootstrap/js/bootstrap.js"></script>
   <script src="./jquery.js"></script>
   <script src="./jquery.scrollto.js"></script>
-  <script>
-    function carregaNoticias() {
-      let noticias = [
-        { id: 26, capa: "noticia26.jpg" },
-        { id: 28, capa: "noticia28.jpg" },
-        { id: 29, capa: "noticia29.jpg" },
-        { id: 30, capa: "noticia30.jpg" },
-        { id: 31, capa: "noticia31.jpg" },
-        { id: 32, capa: "noticia32.jpg" },
-        { id: 33, capa: "noticia33.jpg" }
-      ]
-
-      let noticiasHtml = "";
-
-      for (let x in noticias) {
-
-        noticiasHtml =
-          '            <a href="./noticiasinterna/' + noticias[x].id + '.html">\
-              <div class="item item_noticias">\
-                <img class="img-responsive img_noticia" src="admin/imagens/' + noticias[x].capa + '"> \
-                <img class="img-responsive img_noticia" src="imagens/border_noticia.png" style="margin-top:-180px;">\
-              </div>\
-            </a>';
-
-        document.getElementById("noticias").innerHTML += noticiasHtml;
-      }
-    }
-
-    function carregaSessoes() {
-      carregaNoticias();
-    }
-  </script>
 </head>
 
-<body onload="carregaSessoes()">
+<body>
   <!--TOPO-->
   <header>
     <div class="noprint">
@@ -153,9 +121,20 @@
       <div class="row">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
-            <br /><br /><br /><br />
-          </div>
-
+			<div class="row">
+				<div class="col-md-12 noticias_tit" style="margin-top:20px;">
+				   AGÊNCIA DE EMPREGOS<br />
+				   <img src="imagens/linha_azul.png" class="linha_resp">
+				</div>
+			 </div>
+		  
+			 <div class="row">
+				<p>A Capacittar se diferencia com relação ao processo de assessoria em recursos humanos, tendo profissionais altamente preparados, contribuímos com o processo de recrutamento e seleção nas organizações, bem como para recolocação no mercado de trabalho dos candidatos cadastrados, tanto para cargos efetivos como para cargos temporários.</p>
+				<p>Possuímos pacotes para as empresas divulgarem suas vagas e terem acesso a todo nosso banco de dados, sendo esse, um diferencial que contribui para a perfomance da empresa, otimizando tempo nas contratações e aumentando suas opções de contratação.</p>
+				<p>Trabalhamos com o objetivo de ser o elo entre o candidato e as empresas que oferecem vagas de emprego, sendo então um facilitador na aproximação entre ambas e contribuindo com o sucesso das mesmas.</p>
+				<p>A Capacittar também se diferencia por ser física e online, facilitando o acesso da empresa e do candidato, sendo que vagas e currículos podem ser cadastrados a qualquer hora do dia ou da noite, em qualquer dia da semana.</p>
+			 </div>
+			</div>
         </div>
       </div>
     </div>
